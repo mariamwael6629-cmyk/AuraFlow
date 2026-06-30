@@ -1,0 +1,21 @@
+from datetime import datetime
+
+from pydantic import BaseModel, ConfigDict, EmailStr
+
+
+class UserBase(BaseModel):
+    name: str
+    email: EmailStr
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class UserOut(UserBase):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    role: str
+    avatar_initials: str
+    created_at: datetime
