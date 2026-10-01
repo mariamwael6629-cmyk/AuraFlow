@@ -66,18 +66,13 @@ export default function Landing() {
       </nav>
 
       <section className="hero" id="home">
-        <div className="hero-bg">
-          <div className="orb orb1"></div>
-          <div className="orb orb2"></div>
-          <div className="orb orb3"></div>
-        </div>
+        <div className="hero-bg"></div>
         <div className="hero-badge">
-          <div className="badge-dot"></div> Powered by AI · Now in v3.0
+          <div className="badge-dot"></div> Workflow automation · Built for teams
         </div>
         <h1>
-          Automate Everything.
-          <br />
-          <span className="grad">Build Smarter Flows.</span>
+          Build automations<br />
+          that <span className="grad">actually run.</span>
         </h1>
         <p>
           AuraFlow is the AI-powered workflow platform that turns plain English into running
@@ -102,7 +97,7 @@ export default function Landing() {
             <span className="canvas-meta">6 nodes · 99.8% success · 1.2s avg</span>
           </div>
           <svg className="wf-svg" viewBox="0 0 920 220" xmlns="http://www.w3.org/2000/svg">
-            <rect width="920" height="220" fill="#07090f" />
+            <rect width="920" height="220" fill="#0b0d14" />
             <line x1="152" y1="110" x2="222" y2="110" stroke="#6366f1" strokeWidth="1.8" strokeDasharray="6 4" className="fl" />
             <line x1="322" y1="110" x2="392" y2="76" stroke="#06b6d4" strokeWidth="1.8" strokeDasharray="6 4" className="fl2" />
             <line x1="322" y1="110" x2="392" y2="144" stroke="#6366f1" strokeWidth="1.8" strokeDasharray="5 5" className="fl" />
