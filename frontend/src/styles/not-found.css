@@ -1,0 +1,36 @@
+/* ── NOT FOUND ── */
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 2rem;
+}
+.not-found h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--in), var(--cy));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.not-found p {
+  color: var(--t2);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .wf-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .row-actions {
+    justify-content: flex-start;
+  }
+  .footer-grid {
+    text-align: left;
+  }
+}

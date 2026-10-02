@@ -1,0 +1,32 @@
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  padding: 1.5rem;
+}
+.modal-card {
+  background: var(--bg3);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 440px;
+  padding: 1.8rem;
+  text-align: left;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+}
+.modal-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 1.4rem;
+}

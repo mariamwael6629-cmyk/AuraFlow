@@ -1,0 +1,102 @@
+/* ── DASHBOARD CARD GRIDS (reuse mockup classes) ── */
+.mon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 16px;
+}
+.mon-card {
+  background: var(--bg2);
+  border: 1px solid var(--b2);
+  border-radius: 14px;
+  padding: 1.25rem;
+  text-align: left;
+}
+.mon-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.mon-lbl {
+  font-size: 11px;
+  color: var(--t3);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.status-badge {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.s-live {
+  background: rgba(16, 185, 129, 0.13);
+  color: var(--em);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+.s-warn {
+  background: rgba(245, 158, 11, 0.11);
+  color: var(--am);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+.mon-val {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.mon-sub {
+  font-size: 12px;
+  color: var(--t3);
+  margin-top: 4px;
+}
+.exec-log {
+  background: var(--bg2);
+  border: 1px solid var(--b2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 18px;
+  text-align: left;
+}
+.log-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.log-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-bottom: 1px solid var(--b2);
+}
+.log-item:last-child {
+  border: none;
+}
+.log-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ld-success {
+  background: var(--em);
+  box-shadow: 0 0 5px var(--em);
+}
+.ld-warning {
+  background: var(--am);
+}
+.ld-error {
+  background: var(--re);
+  box-shadow: 0 0 5px var(--re);
+}
+.log-name {
+  color: var(--t1);
+  font-weight: 500;
+  flex: 1;
+}
+.log-time {
+  color: var(--t3);
+}

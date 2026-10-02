@@ -1,0 +1,23 @@
+/* ── RESPONSIVE (landing) ── */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 4rem 1.25rem;
+  }
+  nav {
+    padding: 0 1.25rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+}

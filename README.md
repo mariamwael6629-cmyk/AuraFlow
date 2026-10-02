@@ -53,6 +53,21 @@ Once both servers are running, you can access the platform via:
 
 
 > 💡 *For more advanced configuration, please refer to the individual `frontend/README.md` and `backend/README.md` files.*
+
+### Frontend structure
+
+```text
+frontend/src/
+├── pages/                # Route-level pages (Landing, Login, Register, NotFound, dashboard/*)
+├── components/
+│   ├── landing/          # One component per landing section (Navbar, Hero, Pricing, Faq, …)
+│   └── ProtectedRoute.jsx
+├── data/landing.js       # Static landing content (FAQs, integrations)
+├── styles/               # base/, landing/, dashboard/, components/, auth.css, not-found.css
+├── index.css             # Imports every stylesheet under styles/ in cascade order
+├── api/  context/        # API client + auth context
+└── main.jsx  App.jsx
+```
 > 
 
 ---

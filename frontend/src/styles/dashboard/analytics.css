@@ -1,0 +1,65 @@
+/* ── ANALYTICS ── */
+.an-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.an-card {
+  background: var(--bg2);
+  border: 1px solid var(--b2);
+  border-radius: 14px;
+  padding: 1.25rem;
+  text-align: left;
+}
+.an-lbl {
+  font-size: 11px;
+  color: var(--t3);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.an-val {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin: 5px 0;
+}
+.an-change {
+  font-size: 12px;
+  color: var(--em);
+}
+.chart-card {
+  background: var(--bg2);
+  border: 1px solid var(--b2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 18px;
+  overflow: hidden;
+  text-align: left;
+}
+.weekly-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  height: 160px;
+  margin-top: 1rem;
+}
+.weekly-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 8px;
+}
+.weekly-bar {
+  width: 100%;
+  max-width: 38px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.85), rgba(6, 182, 212, 0.35));
+}
+.weekly-bar-lbl {
+  font-size: 10px;
+  color: var(--t3);
+}

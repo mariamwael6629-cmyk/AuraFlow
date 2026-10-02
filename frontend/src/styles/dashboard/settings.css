@@ -1,0 +1,32 @@
+/* ── SETTINGS ── */
+.settings-card {
+  background: var(--bg2);
+  border: 1px solid var(--b2);
+  border-radius: 14px;
+  padding: 1.6rem;
+  max-width: 480px;
+  text-align: left;
+}
+.settings-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--b2);
+  font-size: 13px;
+}
+.settings-row:last-child {
+  border-bottom: none;
+}
+.settings-row span:first-child {
+  color: var(--t2);
+}
+.settings-row span:last-child {
+  color: var(--t1);
+  font-weight: 600;
+}
