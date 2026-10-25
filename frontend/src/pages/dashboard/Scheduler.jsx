@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { schedulerApi } from "../../api/endpoints";
+import { DataIcon } from "../../components/Icon";
 
 export default function Scheduler() {
   const [triggers, setTriggers] = useState([]);
@@ -48,7 +49,7 @@ export default function Scheduler() {
           {triggers.map((t) => (
             <div className="trigger-row" key={t.id} onClick={() => toggle(t)}>
               <div className="trigger-icon" style={{ background: "rgba(35, 57, 91,.1)", color: "var(--in)" }}>
-                {t.icon}
+                <DataIcon emoji={t.icon} size={18} />
               </div>
               <div className="trigger-info">
                 <h5>{t.name}</h5>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { DataIcon } from "../../components/Icon";
 import {
   analyticsApi,
   executionsApi,
@@ -125,7 +126,7 @@ export default function Overview() {
         )}
         {notifications.slice(0, 5).map((n) => (
           <div className="log-item" key={n.id}>
-            <span style={{ fontSize: 14 }}>{n.icon}</span>
+            <span style={{ display: "inline-flex", color: "var(--t2)" }}><DataIcon emoji={n.icon} size={16} /></span>
             <div className="log-name">{n.message}</div>
             <div className="log-time">{new Date(n.created_at).toLocaleDateString()}</div>
           </div>
