@@ -35,7 +35,7 @@ export default function Register() {
       </div>
       <div className="auth-card">
         <Link className="nav-logo" to="/">
-          <div className="logo-mark">⚡</div>
+          <div className="logo-mark" aria-hidden="true"></div>
           AuraFlow
         </Link>
         <h1>Create your account</h1>

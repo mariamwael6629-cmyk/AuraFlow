@@ -1,15 +1,16 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import Icon from "../../components/Icon";
 
 const NAV_ITEMS = [
-  { to: "/dashboard", label: "Overview", icon: "📊", end: true },
-  { to: "/dashboard/workflows", label: "Workflows", icon: "⚡" },
-  { to: "/dashboard/templates", label: "Templates", icon: "📋" },
-  { to: "/dashboard/integrations", label: "Integrations", icon: "🔗" },
-  { to: "/dashboard/analytics", label: "Analytics", icon: "📈" },
-  { to: "/dashboard/scheduler", label: "Scheduler", icon: "⏰" },
-  { to: "/dashboard/team", label: "Team", icon: "👥" },
-  { to: "/dashboard/settings", label: "Settings", icon: "⚙️" },
+  { to: "/dashboard", label: "Overview", icon: "overview", end: true },
+  { to: "/dashboard/workflows", label: "Workflows", icon: "flow" },
+  { to: "/dashboard/templates", label: "Templates", icon: "templates" },
+  { to: "/dashboard/integrations", label: "Integrations", icon: "link" },
+  { to: "/dashboard/analytics", label: "Analytics", icon: "chart" },
+  { to: "/dashboard/scheduler", label: "Scheduler", icon: "clock" },
+  { to: "/dashboard/team", label: "Team", icon: "users" },
+  { to: "/dashboard/settings", label: "Settings", icon: "gear" },
 ];
 
 export default function DashboardLayout() {
@@ -25,7 +26,7 @@ export default function DashboardLayout() {
     <div className="dash-shell">
       <aside className="dash-sidebar">
         <a className="nav-logo" href="/">
-          <div className="logo-mark">⚡</div>
+          <div className="logo-mark" aria-hidden="true"></div>
           AuraFlow
         </a>
         <ul className="dash-nav">
@@ -36,7 +37,7 @@ export default function DashboardLayout() {
                 end={item.end}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
-                <span>{item.icon}</span> {item.label}
+                <span><Icon name={item.icon} size={18} /></span> {item.label}
               </NavLink>
             </li>
           ))}
@@ -48,7 +49,7 @@ export default function DashboardLayout() {
             <div className="dash-user-email">{user?.email}</div>
           </div>
           <button className="dash-logout" title="Log out" onClick={handleLogout}>
-            ⎋
+            <Icon name="logout" size={18} />
           </button>
         </div>
       </aside>

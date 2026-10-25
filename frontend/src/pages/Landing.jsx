@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Icon from "../components/Icon";
 
 const FAQS = [
   {
     q: "Do I need to know how to code?",
-    a: "Not at all. AuraFlow is designed for everyone — from developers to business users. Our visual canvas and AI assistant let you build complex automations without writing code.",
+    a: "Not at all. AuraFlow is built for everyone, from developers to business users. Our visual canvas and AI assistant let you build complex automations without writing code.",
   },
   {
     q: "How does the AI workflow generator work?",
-    a: "Describe what you want to automate in plain English. Our AI interprets your intent, identifies the right apps and triggers, and builds the entire workflow. You review, adjust, and activate — usually in under 60 seconds.",
+    a: "Describe what you want to automate in plain English. Our AI interprets your intent, identifies the right apps and triggers, and builds the entire workflow. You review, adjust and activate it, usually in under 60 seconds.",
   },
   {
     q: "What happens if a workflow fails?",
@@ -46,7 +47,7 @@ export default function Landing() {
     <>
       <nav>
         <a className="nav-logo" href="#home">
-          <div className="logo-mark">⚡</div>
+          <div className="logo-mark" aria-hidden="true"></div>
           AuraFlow
         </a>
         <ul className="nav-links">
@@ -72,7 +73,7 @@ export default function Landing() {
           <div className="orb orb3"></div>
         </div>
         <div className="hero-badge">
-          <div className="badge-dot"></div> Powered by AI · Now in v3.0
+          <div className="badge-dot"></div> Powered by AI · v3.0
         </div>
         <h1>
           Automate Everything.
@@ -80,60 +81,68 @@ export default function Landing() {
           <span className="grad">Build Smarter Flows.</span>
         </h1>
         <p>
-          AuraFlow is the AI-powered workflow platform that turns plain English into running
-          automations. Connect 500+ apps, schedule processes, and monitor everything in real time.
+          Write what should happen in plain English and AuraFlow turns it into a running
+          automation. Connect 500+ apps, put jobs on a schedule, and watch every run live.
         </p>
         <div className="hero-ctas">
           <Link className="btn-hero" to="/register">
-            ⚡ Start Building — Free
+            Start building, free
           </Link>
           <Link className="btn-hero2" to="/login">
-            ▶ View Live Dashboard
+            View the live dashboard
           </Link>
         </div>
 
         <div className="canvas-wrap">
           <div className="canvas-topbar">
-            <div className="dot-r"></div>
-            <div className="dot-y"></div>
-            <div className="dot-g"></div>
-            <span className="canvas-title">Customer Onboarding Automation</span>
-            <span className="canvas-running">● live</span>
+                        <span className="canvas-title">Customer Onboarding Automation</span>
+            <span className="canvas-running">Live</span>
             <span className="canvas-meta">6 nodes · 99.8% success · 1.2s avg</span>
           </div>
           <svg className="wf-svg" viewBox="0 0 920 220" xmlns="http://www.w3.org/2000/svg">
-            <rect width="920" height="220" fill="#07090f" />
-            <line x1="152" y1="110" x2="222" y2="110" stroke="#6366f1" strokeWidth="1.8" strokeDasharray="6 4" className="fl" />
-            <line x1="322" y1="110" x2="392" y2="76" stroke="#06b6d4" strokeWidth="1.8" strokeDasharray="6 4" className="fl2" />
-            <line x1="322" y1="110" x2="392" y2="144" stroke="#6366f1" strokeWidth="1.8" strokeDasharray="5 5" className="fl" />
-            <line x1="502" y1="76" x2="572" y2="92" stroke="#06b6d4" strokeWidth="1.8" strokeDasharray="6 4" className="fl2" />
-            <line x1="502" y1="144" x2="572" y2="128" stroke="#6366f1" strokeWidth="1.8" strokeDasharray="5 5" className="fl" />
-            <line x1="672" y1="100" x2="722" y2="110" stroke="#10b981" strokeWidth="1.8" strokeDasharray="6 4" className="fl" />
-            <line x1="672" y1="120" x2="722" y2="110" stroke="#10b981" strokeWidth="1.8" strokeDasharray="5 5" className="fl2" />
-
-            <rect x="22" y="76" width="130" height="68" rx="13" fill="rgba(99,102,241,.07)" stroke="rgba(99,102,241,.45)" strokeWidth="1.5" />
-            <text x="87" y="106" fontFamily="Inter,sans-serif" fontSize="13" fill="#eef0f9" textAnchor="middle" fontWeight="700">🔗 Webhook</text>
-            <text x="87" y="124" fontFamily="Inter,sans-serif" fontSize="10" fill="rgba(238,240,249,.4)" textAnchor="middle">New signup event</text>
-
-            <rect x="222" y="76" width="100" height="68" rx="13" fill="rgba(6,182,212,.07)" stroke="rgba(6,182,212,.4)" strokeWidth="1.5" />
-            <text x="272" y="106" fontFamily="Inter,sans-serif" fontSize="13" fill="#eef0f9" textAnchor="middle" fontWeight="700">🔀 Branch</text>
-            <text x="272" y="124" fontFamily="Inter,sans-serif" fontSize="10" fill="rgba(238,240,249,.4)" textAnchor="middle">Plan check</text>
-
-            <rect x="392" y="46" width="110" height="60" rx="13" fill="rgba(236,72,153,.08)" stroke="rgba(236,72,153,.4)" strokeWidth="1.5" />
-            <text x="447" y="80" fontFamily="Inter,sans-serif" fontSize="12" fill="#eef0f9" textAnchor="middle" fontWeight="700">✨ Personalise</text>
-
-            <rect x="392" y="114" width="110" height="60" rx="13" fill="rgba(99,102,241,.07)" stroke="rgba(99,102,241,.3)" strokeWidth="1.5" />
-            <text x="447" y="148" fontFamily="Inter,sans-serif" fontSize="12" fill="#eef0f9" textAnchor="middle" fontWeight="700">💬 Slack</text>
-
-            <rect x="572" y="62" width="100" height="60" rx="13" fill="rgba(16,185,129,.08)" stroke="rgba(16,185,129,.4)" strokeWidth="1.5" />
-            <text x="622" y="96" fontFamily="Inter,sans-serif" fontSize="12" fill="#eef0f9" textAnchor="middle" fontWeight="700">📧 Email</text>
-
-            <rect x="572" y="128" width="100" height="56" rx="13" fill="rgba(6,182,212,.07)" stroke="rgba(6,182,212,.3)" strokeWidth="1.5" />
-            <text x="622" y="160" fontFamily="Inter,sans-serif" fontSize="12" fill="#eef0f9" textAnchor="middle" fontWeight="700">💬 Slack DM</text>
-
-            <rect x="722" y="76" width="122" height="68" rx="13" fill="rgba(16,185,129,.1)" stroke="rgba(16,185,129,.55)" strokeWidth="1.5" />
-            <text x="782" y="106" fontFamily="Inter,sans-serif" fontSize="13" fill="#eef0f9" textAnchor="middle" fontWeight="700">📊 Update CRM</text>
-            <text x="782" y="124" fontFamily="Inter,sans-serif" fontSize="10" fill="rgba(16,185,129,.75)" textAnchor="middle" fontWeight="600">● Executed 2s ago</text>
+            <defs>
+              <pattern id="warp" width="10" height="220" patternUnits="userSpaceOnUse"><line x1="5" y1="0" x2="5" y2="220" stroke="rgba(42,36,32,.07)" strokeWidth="1" /></pattern>
+            </defs>
+            <rect width="920" height="220" fill="#FBF9F5" />
+            <rect width="920" height="220" fill="url(#warp)" />
+            <path d="M152 110 L222 110" fill="none" stroke="#23395B" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M152 110 L222 110" fill="none" stroke="#23395B" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl" />
+            <path d="M322 110 C 352 110, 362 76, 392 76" fill="none" stroke="#B88A1E" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M322 110 C 352 110, 362 76, 392 76" fill="none" stroke="#B88A1E" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl2" />
+            <path d="M322 110 C 352 110, 362 144, 392 144" fill="none" stroke="#23395B" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M322 110 C 352 110, 362 144, 392 144" fill="none" stroke="#23395B" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl" />
+            <path d="M502 76 C 532 76, 542 92, 572 92" fill="none" stroke="#B0412E" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M502 76 C 532 76, 542 92, 572 92" fill="none" stroke="#B0412E" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl2" />
+            <path d="M502 144 C 532 144, 542 156, 572 156" fill="none" stroke="#23395B" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M502 144 C 532 144, 542 156, 572 156" fill="none" stroke="#23395B" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl" />
+            <path d="M672 92 C 697 92, 697 110, 722 110" fill="none" stroke="#4F7A3A" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M672 92 C 697 92, 697 110, 722 110" fill="none" stroke="#4F7A3A" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl" />
+            <path d="M672 156 C 697 156, 697 110, 722 110" fill="none" stroke="#4F7A3A" strokeOpacity=".25" strokeWidth="7" strokeLinecap="round" />
+            <path d="M672 156 C 697 156, 697 110, 722 110" fill="none" stroke="#4F7A3A" strokeWidth="3" strokeLinecap="round" strokeDasharray="9 6" className="fl2" />
+            <rect x="22" y="76" width="130" height="68" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="22" y="76" width="6" height="68" fill="#23395B" />
+            <text x="90.0" y="106.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Webhook</text>
+            <text x="90.0" y="124.0" fontFamily="Karla,sans-serif" fontSize="10.5" fill="#7A716A" textAnchor="middle" fontWeight="600">New signup event</text>
+            <rect x="222" y="76" width="100" height="68" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="222" y="76" width="6" height="68" fill="#B88A1E" />
+            <text x="275.0" y="106.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Branch</text>
+            <text x="275.0" y="124.0" fontFamily="Karla,sans-serif" fontSize="10.5" fill="#7A716A" textAnchor="middle" fontWeight="600">Plan check</text>
+            <rect x="392" y="46" width="110" height="60" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="392" y="46" width="6" height="60" fill="#B0412E" />
+            <text x="450.0" y="81.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Personalise</text>
+            <rect x="392" y="114" width="110" height="60" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="392" y="114" width="6" height="60" fill="#23395B" />
+            <text x="450.0" y="149.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Slack</text>
+            <rect x="572" y="62" width="100" height="60" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="572" y="62" width="6" height="60" fill="#4F7A3A" />
+            <text x="625.0" y="97.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Email</text>
+            <rect x="572" y="128" width="100" height="56" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="572" y="128" width="6" height="56" fill="#23395B" />
+            <text x="625.0" y="161.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Slack DM</text>
+            <rect x="722" y="76" width="122" height="68" rx="3" fill="#FBF9F5" stroke="#2A2420" strokeWidth="1.5" />
+            <rect x="722" y="76" width="6" height="68" fill="#4F7A3A" />
+            <text x="786.0" y="106.0" fontFamily="Karla,sans-serif" fontSize="13" fill="#2A2420" textAnchor="middle" fontWeight="700">Update CRM</text>
+            <text x="786.0" y="124.0" fontFamily="Karla,sans-serif" fontSize="10.5" fill="#4F7A3A" textAnchor="middle" fontWeight="600">Executed 2s ago</text>
           </svg>
         </div>
       </section>
@@ -164,44 +173,44 @@ export default function Landing() {
       <div className="divider"></div>
 
       <section id="features">
-        <div className="sec-tag">⚡ Platform</div>
+        <div className="sec-tag">Platform</div>
         <h2 className="sec-title">
           Everything you need to
           <br />
           <span className="grad2">automate your business</span>
         </h2>
         <p className="sec-sub">
-          From simple two-step flows to complex enterprise automations — AuraFlow handles it all
-          with zero code.
+          Two-step flows and large automations across teams run on the same canvas, with no
+          code.
         </p>
         <div className="feat-grid">
           <div className="feat-card">
-            <div className="feat-icon fi-indigo">🎨</div>
+            <div className="feat-icon fi-indigo"><Icon name="canvas" /></div>
             <h3>Visual Workflow Builder</h3>
             <p>Drag-and-drop canvas with animated node connections and conditional branches.</p>
           </div>
           <div className="feat-card">
-            <div className="feat-icon fi-pink">🤖</div>
+            <div className="feat-icon fi-pink"><Icon name="spark" /></div>
             <h3>AI Automation Assistant</h3>
             <p>Describe your workflow in plain English and get a running automation in seconds.</p>
           </div>
           <div className="feat-card">
-            <div className="feat-icon fi-cyan">🔗</div>
+            <div className="feat-icon fi-cyan"><Icon name="link" /></div>
             <h3>App Integrations Hub</h3>
             <p>Connect 500+ apps including Slack, Salesforce, Gmail, Stripe, and any REST API.</p>
           </div>
           <div className="feat-card">
-            <div className="feat-icon fi-emerald">📡</div>
+            <div className="feat-icon fi-emerald"><Icon name="pulse" /></div>
             <h3>Real-time Monitoring</h3>
             <p>Watch automations execute live and get AI-powered diagnostics on failures.</p>
           </div>
           <div className="feat-card">
-            <div className="feat-icon fi-amber">⏰</div>
+            <div className="feat-icon fi-amber"><Icon name="clock" /></div>
             <h3>Smart Scheduler</h3>
             <p>Time-based, event-driven, and API-triggered automations in one place.</p>
           </div>
           <div className="feat-card">
-            <div className="feat-icon fi-teal">👥</div>
+            <div className="feat-icon fi-teal"><Icon name="users" /></div>
             <h3>Team Collaboration</h3>
             <p>Shared workspaces, role-based permissions, and full version history.</p>
           </div>
@@ -210,8 +219,8 @@ export default function Landing() {
 
       <div className="divider"></div>
 
-      <section style={{ background: "rgba(7,9,15,.6)" }}>
-        <div className="sec-tag">🤖 AI-powered</div>
+      <section style={{ background: "rgba(242, 238, 230,.6)" }}>
+        <div className="sec-tag">AI-powered</div>
         <h2 className="sec-title">
           Build automations
           <br />
@@ -221,7 +230,7 @@ export default function Landing() {
           <div>
             <p className="sec-sub" style={{ marginBottom: "1.5rem" }}>
               Describe what you want to automate. AuraFlow AI picks the right apps and triggers,
-              maps the data, and builds the entire workflow — you review and activate.
+              maps the data, and builds the whole workflow. You review it and switch it on.
             </p>
             <div className="feat-check-list">
               <div><span>✓</span>Understands natural language</div>
@@ -232,10 +241,10 @@ export default function Landing() {
           </div>
           <div className="chat-window">
             <div className="chat-header">
-              <div className="chat-ava">⚡</div>
+              <div className="chat-ava" aria-hidden="true"></div>
               <div>
                 <div style={{ fontSize: 13, fontWeight: 700 }}>AuraFlow AI</div>
-                <div style={{ fontSize: 11, color: "var(--em)" }}>● Online</div>
+                <div style={{ fontSize: 11, color: "var(--em)" }}>Online</div>
               </div>
             </div>
             <div className="chat-messages">
@@ -258,8 +267,8 @@ export default function Landing() {
 
       <div className="divider"></div>
 
-      <section id="integrations" className="center" style={{ background: "rgba(7,9,15,.5)" }}>
-        <div className="sec-tag">🔗 Integrations</div>
+      <section id="integrations" className="center" style={{ background: "rgba(242, 238, 230,.5)" }}>
+        <div className="sec-tag">Integrations</div>
         <h2 className="sec-title">
           Connect your
           <br />
@@ -273,8 +282,8 @@ export default function Landing() {
               {name}
             </div>
           ))}
-          <div className="int-chip" style={{ borderColor: "rgba(99,102,241,0.3)", color: "var(--in)" }}>
-            <strong>+ 488 more →</strong>
+          <div className="int-chip" style={{ borderColor: "rgba(35, 57, 91,0.3)", color: "var(--in)" }}>
+            <strong>+ 488 more</strong>
           </div>
         </div>
       </section>
@@ -282,7 +291,7 @@ export default function Landing() {
       <div className="divider"></div>
 
       <section id="templates">
-        <div className="sec-tag">📋 Templates</div>
+        <div className="sec-tag">Templates</div>
         <h2 className="sec-title">
           Deploy in seconds
           <br />
@@ -310,15 +319,15 @@ export default function Landing() {
         </div>
         <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
           <Link className="btn-ghost" style={{ padding: "12px 28px", fontSize: 14 }} to="/register">
-            Browse all 100+ templates →
+            Browse all 100+ templates
           </Link>
         </div>
       </section>
 
       <div className="divider"></div>
 
-      <section id="pricing" className="center" style={{ background: "rgba(7,9,15,.5)" }}>
-        <div className="sec-tag">💎 Pricing</div>
+      <section id="pricing" className="center" style={{ background: "rgba(242, 238, 230,.5)" }}>
+        <div className="sec-tag">Pricing</div>
         <h2 className="sec-title">
           Simple, transparent
           <br />
@@ -340,7 +349,7 @@ export default function Landing() {
             <Link className="price-btn" to="/register">Get started free</Link>
           </div>
           <div className="price-card featured">
-            <div className="price-badge">MOST POPULAR</div>
+            <div className="price-badge">Most popular</div>
             <div className="price-name">Pro</div>
             <div className="price-value">$49</div>
             <div className="price-period">per month</div>
@@ -370,9 +379,9 @@ export default function Landing() {
 
       <div className="divider"></div>
 
-      <section style={{ background: "rgba(7,9,15,.5)" }}>
+      <section style={{ background: "rgba(242, 238, 230,.5)" }}>
         <div className="center">
-          <div className="sec-tag">❓ FAQ</div>
+          <div className="sec-tag">FAQ</div>
           <h2 className="sec-title">
             Frequently asked
             <br />
@@ -403,7 +412,7 @@ export default function Landing() {
         <p>Join 12,400+ teams saving 18+ hours per week with AuraFlow. Start free, no card required.</p>
         <div className="cta-ctas">
           <Link className="btn-hero" to="/register">
-            ⚡ Start for free — no card needed
+            Start for free, no card needed
           </Link>
           <a className="btn-hero2" href="mailto:sales@auraflow.io">
             Talk to sales
@@ -415,7 +424,7 @@ export default function Landing() {
         <div className="footer-grid">
           <div className="footer-brand">
             <a className="nav-logo" href="#home" style={{ fontSize: 17 }}>
-              <div className="logo-mark">⚡</div>AuraFlow
+              <div className="logo-mark" aria-hidden="true"></div>AuraFlow
             </a>
             <p>The AI-powered automation platform for modern teams. Build, connect, and automate everything.</p>
           </div>
@@ -434,7 +443,7 @@ export default function Landing() {
         </div>
         <div className="footer-bottom">
           <span>© 2026 AuraFlow, Inc. All rights reserved.</span>
-          <span style={{ color: "var(--in)" }}>Built for the automation generation ⚡</span>
+          <span style={{ color: "var(--in)" }}>Built for teams that automate</span>
         </div>
       </footer>
     </>

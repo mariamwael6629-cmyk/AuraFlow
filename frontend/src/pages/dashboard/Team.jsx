@@ -4,9 +4,9 @@ import { teamApi } from "../../api/endpoints";
 const PERM_CLASS = { admin: "pt-admin", edit: "pt-editor", view: "pt-viewer" };
 const PERM_LABEL = { admin: "Admin", edit: "Edit", view: "View" };
 const AV_COLORS = [
-  { bg: "rgba(99,102,241,.15)", fg: "var(--in)" },
-  { bg: "rgba(16,185,129,.12)", fg: "var(--em)" },
-  { bg: "rgba(236,72,153,.12)", fg: "var(--pk)" },
+  { bg: "rgba(35, 57, 91,.15)", fg: "var(--in)" },
+  { bg: "rgba(79, 122, 58,.12)", fg: "var(--em)" },
+  { bg: "rgba(176, 65, 46,.12)", fg: "var(--pk)" },
 ];
 
 export default function Team() {
