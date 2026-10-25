@@ -1,19 +1,22 @@
 :root {
-  --bg: #07090f;
-  --bg2: rgba(11, 15, 26, 0.92);
-  --bg3: rgba(15, 20, 35, 0.95);
-  --b1: rgba(99, 102, 241, 0.2);
-  --b2: rgba(255, 255, 255, 0.07);
-  --b3: rgba(255, 255, 255, 0.03);
-  --in: #6366f1;
-  --cy: #06b6d4;
-  --em: #10b981;
-  --am: #f59e0b;
-  --pk: #ec4899;
-  --re: #f87171;
-  --t1: #eef0f9;
-  --t2: #8892aa;
-  --t3: #3d4a60;
+  /* Warm paper & ink palette — one rust accent, no neon. */
+  --bg: #F4F1EA;
+  --bg2: #FBF9F4;
+  --bg3: #EFEBE2;
+  --b1: #D6CEBF;
+  --b2: #E2DCCF;
+  --b3: #ECE7DD;
+  --in: #C2410C;
+  --cy: #785334;
+  --em: #856B1E;
+  --am: #B45309;
+  --pk: #881337;
+  --re: #B91C1C;
+  --t1: #1C1917;
+  --t2: #57534E;
+  --t3: #A8A29E;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 *,
@@ -29,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: var(--sans);
   background: var(--bg);
   color: var(--t1);
   overflow-x: hidden;
@@ -54,25 +57,20 @@ textarea {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(194, 65, 12, 0.35);
   border-radius: 3px;
 }
 
-.grad {
-  background: linear-gradient(135deg, var(--in) 0%, var(--cy) 60%, var(--em) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.grad,
 .grad2 {
-  background: linear-gradient(135deg, var(--cy), var(--em));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--in);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
 }
 .divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+  background: var(--b2);
 }
 
 .page-loading {
@@ -97,4 +95,14 @@ textarea {
   to {
     transform: rotate(360deg);
   }
+}
+
+h1,
+h2,
+h3,
+.sec-title,
+.nav-logo {
+  font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }

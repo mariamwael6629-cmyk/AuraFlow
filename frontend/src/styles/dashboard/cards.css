@@ -31,14 +31,14 @@
   font-weight: 700;
 }
 .s-live {
-  background: rgba(16, 185, 129, 0.13);
+  background: rgba(133, 107, 30, 0.13);
   color: var(--em);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(133, 107, 30, 0.2);
 }
 .s-warn {
-  background: rgba(245, 158, 11, 0.11);
+  background: rgba(180, 83, 9, 0.11);
   color: var(--am);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(180, 83, 9, 0.2);
 }
 .mon-val {
   font-size: 2.1rem;

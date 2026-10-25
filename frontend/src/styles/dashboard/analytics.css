@@ -57,7 +57,7 @@
   width: 100%;
   max-width: 38px;
   border-radius: 5px 5px 0 0;
-  background: linear-gradient(180deg, rgba(99, 102, 241, 0.85), rgba(6, 182, 212, 0.35));
+  background: var(--in);
 }
 .weekly-bar-lbl {
   font-size: 10px;

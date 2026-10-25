@@ -47,7 +47,7 @@ export default function Scheduler() {
           )}
           {triggers.map((t) => (
             <div className="trigger-row" key={t.id} onClick={() => toggle(t)}>
-              <div className="trigger-icon" style={{ background: "rgba(99,102,241,.1)", color: "var(--in)" }}>
+              <div className="trigger-icon" style={{ background: "rgba(194,65,12,.1)", color: "var(--in)" }}>
                 {t.icon}
               </div>
               <div className="trigger-info">

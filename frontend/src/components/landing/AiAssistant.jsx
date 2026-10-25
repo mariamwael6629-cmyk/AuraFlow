@@ -1,7 +1,7 @@
 export default function AiAssistant() {
   return (
-    <section style={{ background: "rgba(7,9,15,.6)" }}>
-      <div className="sec-tag">🤖 AI-powered</div>
+    <section style={{ background: "rgba(244,241,234,.6)" }}>
+      <div className="sec-tag">AI-powered</div>
       <h2 className="sec-title">
         Build automations
         <br />
@@ -22,7 +22,7 @@ export default function AiAssistant() {
         </div>
         <div className="chat-window">
           <div className="chat-header">
-            <div className="chat-ava">⚡</div>
+            <div className="chat-ava">A</div>
             <div>
               <div style={{ fontSize: 13, fontWeight: 700 }}>AuraFlow AI</div>
               <div style={{ fontSize: 11, color: "var(--em)" }}>● Online</div>

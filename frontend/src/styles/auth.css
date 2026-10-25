@@ -18,7 +18,7 @@
   border: 1px solid var(--b2);
   border-radius: 18px;
   padding: 2.4rem;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 90px rgba(28, 25, 23, 0.08);
 }
 .auth-card .nav-logo {
   justify-content: center;
@@ -50,7 +50,7 @@
   color: var(--t2);
 }
 .form-field input {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(28, 25, 23, 0.04);
   border: 1px solid var(--b2);
   border-radius: 9px;
   padding: 11px 13px;
@@ -60,11 +60,11 @@
   transition: border-color 0.2s;
 }
 .form-field input:focus {
-  border-color: rgba(99, 102, 241, 0.5);
+  border-color: rgba(194, 65, 12, 0.5);
 }
 .form-error {
-  background: rgba(248, 113, 113, 0.1);
-  border: 1px solid rgba(248, 113, 113, 0.3);
+  background: rgba(185, 28, 28, 0.1);
+  border: 1px solid rgba(185, 28, 28, 0.3);
   color: var(--re);
   font-size: 13px;
   padding: 10px 13px;
@@ -74,7 +74,7 @@
 }
 .auth-submit {
   width: 100%;
-  background: linear-gradient(135deg, var(--in), var(--cy));
+  background: var(--in);
   border: none;
   color: #fff;
   font-size: 14px;
@@ -84,7 +84,7 @@
   cursor: pointer;
   margin-top: 6px;
   transition: opacity 0.2s;
-  box-shadow: 0 8px 28px rgba(99, 102, 241, 0.3);
+  box-shadow: none;
 }
 .auth-submit:hover {
   opacity: 0.9;

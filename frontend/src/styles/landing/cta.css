@@ -2,7 +2,7 @@
 .cta-banner {
   text-align: center;
   padding: 6rem 2.5rem;
-  background: rgba(7, 9, 15, 0.8);
+  background: rgba(244, 241, 234, 0.8);
 }
 .cta-banner h2 {
   font-size: clamp(2.2rem, 5vw, 3.4rem);

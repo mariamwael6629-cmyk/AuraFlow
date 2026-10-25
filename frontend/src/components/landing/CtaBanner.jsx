@@ -11,7 +11,7 @@ export default function CtaBanner() {
       <p>Join 12,400+ teams saving 18+ hours per week with AuraFlow. Start free, no card required.</p>
       <div className="cta-ctas">
         <Link className="btn-hero" to="/register">
-          ⚡ Start for free — no card needed
+          Start for free — no card needed
         </Link>
         <a className="btn-hero2" href="mailto:sales@auraflow.io">
           Talk to sales

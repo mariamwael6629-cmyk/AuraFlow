@@ -1,7 +1,7 @@
 export default function Features() {
   return (
     <section id="features">
-      <div className="sec-tag">⚡ Platform</div>
+      <div className="sec-tag">Platform</div>
       <h2 className="sec-title">
         Everything you need to
         <br />
@@ -13,32 +13,32 @@ export default function Features() {
       </p>
       <div className="feat-grid">
         <div className="feat-card">
-          <div className="feat-icon fi-indigo">🎨</div>
+          <div className="feat-icon fi-indigo">01</div>
           <h3>Visual Workflow Builder</h3>
           <p>Drag-and-drop canvas with animated node connections and conditional branches.</p>
         </div>
         <div className="feat-card">
-          <div className="feat-icon fi-pink">🤖</div>
+          <div className="feat-icon fi-pink">02</div>
           <h3>AI Automation Assistant</h3>
           <p>Describe your workflow in plain English and get a running automation in seconds.</p>
         </div>
         <div className="feat-card">
-          <div className="feat-icon fi-cyan">🔗</div>
+          <div className="feat-icon fi-cyan">03</div>
           <h3>App Integrations Hub</h3>
           <p>Connect 500+ apps including Slack, Salesforce, Gmail, Stripe, and any REST API.</p>
         </div>
         <div className="feat-card">
-          <div className="feat-icon fi-emerald">📡</div>
+          <div className="feat-icon fi-emerald">04</div>
           <h3>Real-time Monitoring</h3>
           <p>Watch automations execute live and get AI-powered diagnostics on failures.</p>
         </div>
         <div className="feat-card">
-          <div className="feat-icon fi-amber">⏰</div>
+          <div className="feat-icon fi-amber">05</div>
           <h3>Smart Scheduler</h3>
           <p>Time-based, event-driven, and API-triggered automations in one place.</p>
         </div>
         <div className="feat-card">
-          <div className="feat-icon fi-teal">👥</div>
+          <div className="feat-icon fi-teal">06</div>
           <h3>Team Collaboration</h3>
           <p>Shared workspaces, role-based permissions, and full version history.</p>
         </div>

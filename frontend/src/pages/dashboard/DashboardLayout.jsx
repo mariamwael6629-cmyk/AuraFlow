@@ -2,14 +2,14 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 const NAV_ITEMS = [
-  { to: "/dashboard", label: "Overview", icon: "📊", end: true },
-  { to: "/dashboard/workflows", label: "Workflows", icon: "⚡" },
-  { to: "/dashboard/templates", label: "Templates", icon: "📋" },
-  { to: "/dashboard/integrations", label: "Integrations", icon: "🔗" },
-  { to: "/dashboard/analytics", label: "Analytics", icon: "📈" },
-  { to: "/dashboard/scheduler", label: "Scheduler", icon: "⏰" },
-  { to: "/dashboard/team", label: "Team", icon: "👥" },
-  { to: "/dashboard/settings", label: "Settings", icon: "⚙️" },
+  { to: "/dashboard", label: "Overview", end: true },
+  { to: "/dashboard/workflows", label: "Workflows" },
+  { to: "/dashboard/templates", label: "Templates" },
+  { to: "/dashboard/integrations", label: "Integrations" },
+  { to: "/dashboard/analytics", label: "Analytics" },
+  { to: "/dashboard/scheduler", label: "Scheduler" },
+  { to: "/dashboard/team", label: "Team" },
+  { to: "/dashboard/settings", label: "Settings" },
 ];
 
 export default function DashboardLayout() {
@@ -25,7 +25,7 @@ export default function DashboardLayout() {
     <div className="dash-shell">
       <aside className="dash-sidebar">
         <a className="nav-logo" href="/">
-          <div className="logo-mark">⚡</div>
+          <div className="logo-mark">A</div>
           AuraFlow
         </a>
         <ul className="dash-nav">
@@ -36,7 +36,7 @@ export default function DashboardLayout() {
                 end={item.end}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
-                <span>{item.icon}</span> {item.label}
+                {item.label}
               </NavLink>
             </li>
           ))}

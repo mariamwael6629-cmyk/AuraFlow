@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Templates() {
   return (
     <section id="templates">
-      <div className="sec-tag">📋 Templates</div>
+      <div className="sec-tag">Templates</div>
       <h2 className="sec-title">
         Deploy in seconds
         <br />

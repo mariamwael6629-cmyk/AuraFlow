@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <a className="nav-logo" href="#home" style={{ fontSize: 17 }}>
-            <div className="logo-mark">⚡</div>AuraFlow
+            <div className="logo-mark">A</div>AuraFlow
           </a>
           <p>The AI-powered automation platform for modern teams. Build, connect, and automate everything.</p>
         </div>
@@ -23,7 +23,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© 2026 AuraFlow, Inc. All rights reserved.</span>
-        <span style={{ color: "var(--in)" }}>Built for the automation generation ⚡</span>
+        <span style={{ color: "var(--in)" }}>Built for the automation generation</span>
       </div>
     </footer>
   );

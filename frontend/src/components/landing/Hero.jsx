@@ -23,7 +23,7 @@ export default function Hero() {
       </p>
       <div className="hero-ctas">
         <Link className="btn-hero" to="/register">
-          ⚡ Start Building — Free
+          Start Building — Free
         </Link>
         <Link className="btn-hero2" to="/login">
           ▶ View Live Dashboard

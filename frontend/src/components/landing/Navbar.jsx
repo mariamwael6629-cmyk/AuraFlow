@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav>
       <a className="nav-logo" href="#home">
-        <div className="logo-mark">⚡</div>
+        <div className="logo-mark">A</div>
         AuraFlow
       </a>
       <ul className="nav-links">

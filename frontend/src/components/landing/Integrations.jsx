@@ -2,8 +2,8 @@ import { INTEGRATIONS } from "../../data/landing";
 
 export default function Integrations() {
   return (
-    <section id="integrations" className="center" style={{ background: "rgba(7,9,15,.5)" }}>
-      <div className="sec-tag">🔗 Integrations</div>
+    <section id="integrations" className="center" style={{ background: "rgba(244,241,234,.5)" }}>
+      <div className="sec-tag">Integrations</div>
       <h2 className="sec-title">
         Connect your
         <br />
@@ -17,7 +17,7 @@ export default function Integrations() {
             {name}
           </div>
         ))}
-        <div className="int-chip" style={{ borderColor: "rgba(99,102,241,0.3)", color: "var(--in)" }}>
+        <div className="int-chip" style={{ borderColor: "rgba(194,65,12,0.3)", color: "var(--in)" }}>
           <strong>+ 488 more →</strong>
         </div>
       </div>
