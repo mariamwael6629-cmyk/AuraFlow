@@ -12,11 +12,9 @@
 .not-found h1 {
   font-size: 5rem;
   font-weight: 800;
-  background: var(--in);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  
+  
+  -webkit-text-fill-color: currentColor; color: var(--in);}
 .not-found p {
   color: var(--t2);
   margin-bottom: 1rem;

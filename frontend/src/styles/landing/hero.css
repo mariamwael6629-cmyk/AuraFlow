@@ -42,7 +42,7 @@
 .orb3 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(133, 107, 30, 0.08), transparent);
+  background: radial-gradient(circle, rgba(133, 68, 30, 0.08), transparent);
   bottom: 0;
   right: 0;
   animation: orb-drift 12s ease-in-out infinite;

@@ -48,7 +48,7 @@
   width: fit-content;
 }
 .status-active {
-  background: rgba(133, 107, 30, 0.12);
+  background: rgba(133, 68, 30, 0.12);
   color: var(--em);
 }
 .status-paused {

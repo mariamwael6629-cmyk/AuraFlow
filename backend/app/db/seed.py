@@ -57,7 +57,7 @@ INTEGRATIONS = [
     ("LinkedIn", "#0072b1", "marketing"),
     ("AWS", "#ff9900", "infrastructure"),
     ("Google Sheets", "#34a853", "productivity"),
-    ("Airtable", "#fcb400", "productivity"),
+    ("Airtable", "#D0682C", "productivity"),
     ("Klaviyo", "#e01e5a", "marketing"),
     ("GitLab", "#f05032", "developer"),
     ("Intercom", "#00b2a9", "communication"),
