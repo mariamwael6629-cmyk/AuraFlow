@@ -55,7 +55,7 @@ INTEGRATIONS = [
     ("Figma", "#f24e1e", "design"),
     ("Facebook Ads", "#1877f2", "marketing"),
     ("LinkedIn", "#0072b1", "marketing"),
-    ("AWS", "#ff9900", "infrastructure"),
+    ("AWS", "#D2592D", "infrastructure"),
     ("Google Sheets", "#34a853", "productivity"),
     ("Airtable", "#D0682C", "productivity"),
     ("Klaviyo", "#e01e5a", "marketing"),

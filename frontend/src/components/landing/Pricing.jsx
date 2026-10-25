@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="center" style={{ background: "rgba(244,241,234,.5)" }}>
+    <section id="pricing" className="center" style={{ background: "rgba(240,239,238,.5)" }}>
       <div className="sec-tag">Pricing</div>
       <h2 className="sec-title">
         Simple, transparent

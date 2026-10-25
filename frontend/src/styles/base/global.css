@@ -1,19 +1,19 @@
 :root {
   /* Warm paper & ink palette — one rust accent, no neon. */
-  --bg: #F4F1EA;
-  --bg2: #FBF9F4;
-  --bg3: #EFEBE2;
-  --b1: #D6CEBF;
-  --b2: #E2DCCF;
-  --b3: #ECE7DD;
+  --bg: #F0EFEE;
+  --bg2: #F8F7F7;
+  --bg3: #E9E8E8;
+  --b1: #CDCAC8;
+  --b2: #DAD8D7;
+  --b3: #E6E4E3;
   --in: #C2410C;
-  --cy: #785334;
+  --cy: #784634;
   --em: #85441E;
   --am: #B45309;
   --pk: #881337;
   --re: #B91C1C;
   --t1: #1C1917;
-  --t2: #57534E;
+  --t2: #56514F;
   --t3: #A8A29E;
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;

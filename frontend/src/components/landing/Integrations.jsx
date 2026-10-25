@@ -2,7 +2,7 @@ import { INTEGRATIONS } from "../../data/landing";
 
 export default function Integrations() {
   return (
-    <section id="integrations" className="center" style={{ background: "rgba(244,241,234,.5)" }}>
+    <section id="integrations" className="center" style={{ background: "rgba(240,239,238,.5)" }}>
       <div className="sec-tag">Integrations</div>
       <h2 className="sec-title">
         Connect your

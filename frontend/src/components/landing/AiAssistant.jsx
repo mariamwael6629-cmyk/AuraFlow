@@ -1,6 +1,6 @@
 export default function AiAssistant() {
   return (
-    <section style={{ background: "rgba(244,241,234,.6)" }}>
+    <section style={{ background: "rgba(240,239,238,.6)" }}>
       <div className="sec-tag">AI-powered</div>
       <h2 className="sec-title">
         Build automations

@@ -5,7 +5,7 @@ export default function Faq() {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <section style={{ background: "rgba(244,241,234,.5)" }}>
+    <section style={{ background: "rgba(240,239,238,.5)" }}>
       <div className="center">
         <div className="sec-tag">FAQ</div>
         <h2 className="sec-title">

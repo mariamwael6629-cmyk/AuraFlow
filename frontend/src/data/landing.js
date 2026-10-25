@@ -33,6 +33,6 @@ export const INTEGRATIONS = [
   ["GitHub", "#24292e"],
   ["Notion", "#000000"],
   ["Figma", "#f24e1e"],
-  ["AWS", "#ff9900"],
+  ["AWS", "#D2592D"],
   ["Google Sheets", "#34a853"],
 ];
