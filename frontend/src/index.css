@@ -1976,3 +1976,17 @@ nav { background: var(--bg); border-bottom: 2px solid var(--t1); }
   .dash-shell { grid-template-columns: minmax(0, 1fr); }
   .dash-sidebar, .dash-main, .dash-nav { min-width: 0; }
 }
+
+/* Workflow list on phones: no column header; name and status on top,
+   the two numbers side by side with their own labels, actions last. */
+@media (max-width: 700px) {
+  .wf-row.wf-head { display: none; }
+  .wf-row { grid-template-columns: minmax(0, 1fr) auto; gap: 10px 12px; }
+  .wf-row .wf-name { grid-column: 1; }
+  .wf-row .status-pill { grid-column: 2; grid-row: 1; align-self: start; }
+  .wf-stat { font-variant-numeric: tabular-nums; }
+  .wf-stat::before { content: attr(data-label) " "; color: var(--t3); }
+  .wf-row .row-actions { grid-column: 1 / -1; }
+  .dash-sidebar { align-items: center; }
+  .dash-user { align-self: center; margin-top: 0 !important; }
+}

@@ -109,8 +109,8 @@ export default function Workflows() {
               <span className={`status-pill status-${wf.status}`}>
                 {STATUS_LABEL[wf.status] || wf.status}
               </span>
-              <span>{wf.executions_count}</span>
-              <span>{wf.success_rate}%</span>
+              <span className="wf-stat" data-label="Executions">{wf.executions_count}</span>
+              <span className="wf-stat" data-label="Success rate">{wf.success_rate}%</span>
               <div className="row-actions">
                 <button disabled={busyId === wf.id} onClick={() => handleRun(wf.id)}>
                   Run
